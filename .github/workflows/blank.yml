@@ -19,6 +19,17 @@ jobs:
 
    - name: Display message
      run: echo "this is first actions"
+ 
+ shell-test:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: run shell commands
+     run: echo "create new action"
+   
+   - name: Test Success
+     run: echo "Test completed successfully"
+   
 
    
   
