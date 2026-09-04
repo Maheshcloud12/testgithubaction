@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches:
+      -main
+  pull_requests:
+    - main
+  workflow_dispatch:
+
+jobs:
+  runs_on: ubuntu-latest
+  runs_on: self-hosted
+
+  steps:
+   - name: checkout code
+   - uses: actions/checkout@v4
+
+   - name: Display message
+   - run: echo "this is first actions"
+
+   
+  
+      
+      
