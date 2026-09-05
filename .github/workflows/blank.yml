@@ -21,7 +21,8 @@ jobs:
      run: echo "this is first actions"
  
  shell-test:
-  runs-on: ubuntu-latest
+  # runs-on: ubuntu-latest
+  runs-on: self-hosted
 
   steps:
    - name: run shell commands
